@@ -9,7 +9,7 @@
       </div>
       <div class="page__info">
         <div class="text">
-          A person, who is being happy through having a creative outlet. Developing software, mostly doing frontend work. Fan of HTML, CSS and ES6. Living in Paderborn, Germany.
+          Hi, I'm Alper. I'm developing software, mostly frontend stuff. Having a creative outlet makes me happy. Fan of HTML, CSS and ES6. Living in Paderborn, Germany.
         </div>
         <div class="image">
           <img src="http://pixelartmaker.com/art/f1dd5233ac80be4.png">
