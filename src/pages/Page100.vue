@@ -9,7 +9,7 @@
       </div>
       <div class="page__info">
         <div class="text">
-          Hi, I'm Alper. I'm developing software, mostly frontend stuff. Having a creative outlet makes me happy. Fan of HTML, CSS and ES6. Living in Paderborn, Germany.
+          Hi, I'm Alper, developing software, mostly frontend stuff. Having a creative outlet makes me happy. Fan of HTML, CSS and ES6. Living in Paderborn, Germany.
         </div>
         <div class="image">
           <img src="http://pixelartmaker.com/art/f1dd5233ac80be4.png">
