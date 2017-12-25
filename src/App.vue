@@ -23,15 +23,9 @@ body {
 }
 #app {
   font-family: 'Courier New', 'Courier', 'monospace';
-  font-size: 20px;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media only screen and (max-width: 768px) {
-  #app {
-    font-size: 20px;
-  }
 }
 
 @media only screen and (min-width: 767px) and (max-width: 992px){
@@ -44,7 +38,7 @@ body {
   #app {
     margin-left: 15%;
     width: 70%;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
