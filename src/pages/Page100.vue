@@ -1,5 +1,5 @@
 <template>
-  <base-page title="TELETEXT">
+  <base-page title="TELETEXT" number="100">
     <div
       class="page"
       slot="pageContent">
@@ -9,25 +9,25 @@
       </div>
       <div class="page__info">
         <div class="text">
-          Hi, I'm Alper, developing software, mostly frontend stuff. Having a creative outlet makes me happy. Fan of HTML, CSS and ES6. Living in Paderborn, Germany.
+          Hi, I'm Alper, developing software, mostly frontend stuff. Having a creative outlet makes me happy. Living in Paderborn, Germany.
         </div>
         <div class="image">
           <img src="http://pixelartmaker.com/art/f1dd5233ac80be4.png">
         </div>
       </div>
       <div class="page__links">
-        <span class="link">
+        <a class="link nostyle" href="#/page/200">
           <span class="link__text">About</span>
           <span class="link__number">200</span>
-        </span>
-        <span class="link">
+        </a>
+        <a class="link nostyle" href="https://blog.alperkilci.com">
           <span class="link__text">Blog</span>
           <span class="link__number">300</span>
-        </span>
-        <span class="link">
+        </a>
+        <a class="link nostyle">
           <span class="link__text">Things I do</span>
           <span class="link__number">400</span>
-        </span>
+        </a>
       </div>
       <div class="page__footer">www.alperkilci.com</div>
     </div>
@@ -44,18 +44,6 @@ export default {
 
 <style lang="scss">
 .page {
-  display: grid;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
-  grid-gap: 12px;
-
-  &__banner {
-    background-color: blue;
-    font-family: teletekst;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-
   &__info {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -89,23 +77,16 @@ export default {
     }
   }
 
-  &__footer {
-    font-size: 20px;
-    align-self: end;
+  .banner-text {
     text-align: center;
-    background-color: red;
-  }
-}
 
-.banner-text {
-  text-align: center;
+    &--top {
+      font-size: 0.6em;
+    }
 
-  &--top {
-    font-size: 0.6em;
-  }
-
-  &--bottom {
-    font-size: 1.2em;
+    &--bottom {
+      font-size: 1.2em;
+    }
   }
 }
 </style>
