@@ -1,6 +1,6 @@
 <template>
   <div class="page-header">
-    <span class="page-number">P{{ pageNumber }}</span>
+    <span class="page-number">P{{ number }}</span>
     <span class="title">{{ title }}</span>
     <date-time-display />
   </div>
@@ -13,21 +13,8 @@ export default {
   components: { DateTimeDisplay },
   props: {
     title: String,
+    number: String,
   },
-  data() {
-    return {
-      pageNumber: '',
-    };
-  },
-  computed: {
-    pageNumberFromPath() {
-      return this.$router.currentRoute.path.split('/').pop();
-    },
-  },
-  beforeMount() {
-    this.pageNumber = this.pageNumberFromPath || 100;
-  },
-
 };
 </script>
 
