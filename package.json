@@ -12,6 +12,7 @@
     "postinstall": "webpack -p --config ./build/webpack.prod.conf.js --progress --profile --colors --display-error-details --debug"
   },
   "dependencies": {
+    "debounce": "^1.1.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
