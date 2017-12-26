@@ -10,44 +10,4 @@ export default {
 };
 </script>
 
-<style>
-body {
-  background-color: #000000;
-  color: #ffffff;
-  margin: 0;
-  padding: 5px;
-}
-@font-face {
-  font-family: teletekst;
-  src: url("assets/fonts/8-bit_pusab.ttf");
-}
-#app {
-  font-family: 'Courier New', 'Courier', 'monospace';
-  font-size: 18px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@media only screen and (min-width: 767px) and (max-width: 992px){
-  #app {
-    font-size: 22px;
-  }
-}
-
-@media only screen and (min-width: 993px) and (max-width: 1199px){
-  #app {
-    margin-left: 15%;
-    width: 70%;
-    font-size: 22px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  #app {
-    margin-left: 15%;
-    width: 70%;
-    font-size: 26px;
-  }
-}
-
-</style>
+<style src="./styles/app.scss" lang="scss" />
