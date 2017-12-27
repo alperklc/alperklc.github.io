@@ -1,6 +1,12 @@
-# personal-website-of-alperklc
+# My personal website
 
-> A Vue.js project
+> It all started with an idea of learning CSS Grid. Then one day I saw an oldschool teletext page on a TV screen and this gave me an idea.
+
+## Further ideas
+
+* It's a Vue.js project for now. Willing to decouple it from frameworks and distribute it as a vanilla JS project.
+
+* Display summaries of the most recent blog posts on blog page (300) automatically
 
 ## Build Setup
 
@@ -17,5 +23,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
