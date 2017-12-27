@@ -29,7 +29,7 @@
           <span class="link__number">400</span>
         </a>
       </div>
-      <div class="page__footer">www.alperkilci.com</div>
+      <div class="page__footer">Click or type page number to navigate</div>
     </div>
   </base-page>
 </template>
