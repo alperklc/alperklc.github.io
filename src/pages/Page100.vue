@@ -20,12 +20,12 @@
           <span class="link__text">About</span>
           <span class="link__number">200</span>
         </a>
-        <a class="link nostyle" href="https://blog.alperkilci.com">
+        <a class="link nostyle" href="#/page/300">
           <span class="link__text">Blog</span>
           <span class="link__number">300</span>
         </a>
-        <a class="link nostyle">
-          <span class="link__text">Things I do</span>
+        <a class="link nostyle" href="#/page/400">
+          <span class="link__text">Contact</span>
           <span class="link__number">400</span>
         </a>
       </div>
