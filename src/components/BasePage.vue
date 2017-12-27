@@ -1,10 +1,15 @@
 <template>
-  <div class="page-container">
-    <page-header
-      :title="title"
-      :initialPageNumber="number"
-    />
-    <slot name="pageContent" />
+  <div>
+    <div class="page-container">
+      <page-header
+        :title="title"
+        :initialPageNumber="number"
+      />
+      <slot name="pageContent" />
+    </div>
+    <div class="page__footer">
+      Click or type page number to navigate
+    </div>
   </div>
 </template>
 
