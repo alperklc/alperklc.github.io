@@ -10,7 +10,7 @@
 import debounce from 'debounce';
 import DateTimeDisplay from './DateTimeDisplay';
 
-const VALID_PAGES = ['100', '200', '400'];
+const VALID_PAGES = ['100', '200', '300', '400'];
 const NAVIGATION_TIMEOUT = 1000;
 
 export default {
