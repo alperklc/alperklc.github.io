@@ -1,0 +1,31 @@
+<template>
+  <base-page title="TELETEXT" number="300">
+    <div
+      class="page"
+      slot="pageContent">
+      <div class="page__banner">
+        <span class="banner-text banner-text--top">( ͡° ͜ʖ ͡°)</span>
+        <span class="banner-text banner-text--bottom">BLOG</span>
+      </div>
+      <div class="text">
+        I wrote some posts about travelling, technology and personal things on different blogs in the past.
+        Created my own blog recently, writing sometimes.
+        My current blog is written in my mothertongue, Turkish.
+      </div>
+      <div class="text">
+        Wouldn't it be nice to have few words automatically from the most recent blog posts here? Well, already added to the backlog!
+      </div>
+      <div class="text">
+        Here it is: <a class="link nostyle" href="https://blog.alperkilci.com">blog.alperkilci.com</a>
+      </div>
+    </div>
+  </base-page>
+</template>
+
+<script>
+import BasePage from '../components/BasePage';
+
+export default {
+  components: { BasePage },
+};
+</script>
