@@ -70,6 +70,7 @@ export default {
       display: grid;
       grid-template-columns: 1fr 1fr;
       height: 20px;
+      cursor: pointer !important;
 
       &__number {
         text-align: right;
