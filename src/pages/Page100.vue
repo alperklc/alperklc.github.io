@@ -17,16 +17,12 @@
       </div>
       <div class="page__links">
         <a class="link nostyle" href="#/page/200">
-          <span class="link__text">About</span>
+          <span class="link__text">Blog</span>
           <span class="link__number">200</span>
         </a>
         <a class="link nostyle" href="#/page/300">
-          <span class="link__text">Blog</span>
-          <span class="link__number">300</span>
-        </a>
-        <a class="link nostyle" href="#/page/400">
           <span class="link__text">Contact</span>
-          <span class="link__number">400</span>
+          <span class="link__number">300</span>
         </a>
       </div>
     </div>

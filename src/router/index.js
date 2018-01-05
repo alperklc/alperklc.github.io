@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import Page100 from '@/pages/Page100';
+import Page200 from '@/pages/Page200';
 import Page300 from '@/pages/Page300';
 
 Vue.use(Router);
@@ -16,6 +17,10 @@ export default new Router({
       path: '/page/100',
       name: 'Page100',
       component: Page100,
+    },
+    {
+      path: '/page/200',
+      component: Page200,
     },
     {
       path: '/page/300',
