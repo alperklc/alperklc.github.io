@@ -4,7 +4,7 @@ body {
   background-color: #000000;
   color: #ffffff;
   margin: 0;
-  padding: 5px;
+  padding: 12px;
 }
 
 a.nostyle:link {
@@ -26,7 +26,6 @@ a.nostyle:visited {
 
 #app {
   font-family: 'Courier New', 'Courier', 'monospace';
-  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -39,16 +38,16 @@ a.nostyle:visited {
 
 @media only screen and (min-width: 993px) and (max-width: 1199px){
   #app {
-    margin-left: 15%;
-    width: 70%;
-    font-size: 22px;
+    margin-left: 20%;
+    width: 60%;
+    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   #app {
-    margin-left: 15%;
-    width: 70%;
-    font-size: 26px;
+    margin-left: 20%;
+    width: 60%;
+    font-size: 24px;
   }
 }

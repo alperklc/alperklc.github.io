@@ -71,7 +71,7 @@ export default {
 <style>
 .page-header {
   display: grid;
-  grid-template-columns: 10% auto 40%;
+  grid-template-columns: 10% auto 60%;
 }
 
 .page-header .datetime {
