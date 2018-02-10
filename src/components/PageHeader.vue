@@ -10,7 +10,7 @@
 import debounce from 'debounce';
 import DateTimeDisplay from './DateTimeDisplay';
 
-const VALID_PAGES = ['100', '200', '300', '400'];
+const VALID_PAGES = ['100', '200', '300'];
 const NAVIGATION_TIMEOUT = 1000;
 
 export default {
@@ -46,7 +46,7 @@ export default {
       return !!VALID_PAGES.find(page => page === pageNumber);
     },
     isNumeric(keyCode) {
-      return keyCode >= 48 && keyCode <= 57;
+      return (keyCode >= 48 && keyCode <= 57) || (keyCode >= 96 && keyCode <= 105);
     },
     handleKeydown(e) {
       if (this.isNumeric(e.keyCode)) {
