@@ -20,7 +20,7 @@
         <span class="contact-link">
           <span>Github:</span>
           <a class="link nostyle" href="https://github.com/alperklc/">github.com/alperklc</a>
-        </span>        
+        </span>
         <span class="contact-link">
           <span>LinkedIn:</span>
           <a class="link nostyle" href="https://www.linkedin.com/in/alper-kılcı-39a55472">linkedin.com/in/alper-kılcı-39a55472</a>
