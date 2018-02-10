@@ -26,3 +26,9 @@ export default {
   components: { BasePage },
 };
 </script>
+
+<style>
+.text {
+  margin: 0 20px;
+}
+</style>
