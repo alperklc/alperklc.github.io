@@ -10,7 +10,7 @@
       <div class="text">
         I wrote some posts about travelling, technology and personal things on different blogs in the past.
         Created my own blog recently, writing sometimes.
-        My current blog is written in my motherlanguage, Turkish.
+        My current blog is partially written in Turkish.
       </div>
       <div class="text">
         Here it is: <a class="link nostyle" href="https://blog.alperkilci.com">blog.alperkilci.com</a>
