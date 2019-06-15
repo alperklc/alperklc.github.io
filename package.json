@@ -9,8 +9,11 @@
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
-    "postinstall": "webpack -p --config ./build/webpack.prod.conf.js --progress --profile --colors --display-error-details --debug"
+    "postinstall": "webpack -p --config ./build/webpack.prod.conf.js --progress --profile --colors --display-error-details --debug",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "http://alperklc.github.io",
   "dependencies": {
     "debounce": "^1.1.0",
     "vue": "^2.5.2",
@@ -58,7 +61,8 @@
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
-    "webpack-merge": "^4.1.0"
+    "webpack-merge": "^4.1.0",
+    "gh-pages": "^2.0.1"
   },
   "engines": {
     "node": ">= 4.0.0",
