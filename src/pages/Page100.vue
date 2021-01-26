@@ -1,18 +1,14 @@
 <template>
   <base-page title="TELETEXT" number="100">
-    <div
-      class="page"
-      slot="pageContent">
+    <div class="page" slot="pageContent">
       <div class="page__banner">
         <span class="banner-text banner-text--top">Personal website of</span>
         <span class="banner-text banner-text--bottom">ALPER KILCI</span>
       </div>
       <div class="page__info">
         <div class="text">
-          Hi, I'm Alper, developing software, mostly frontend stuff. Having a creative outlet makes me happy. Living in Hamburg, Germany.
-        </div>
-        <div class="image">
-          <img src="http://pixelartmaker.com/art/f1dd5233ac80be4.png">
+          Hi, I'm Alper, developing software, mostly frontend stuff. Having a
+          creative outlet makes me happy. Living in Hamburg, Germany.
         </div>
       </div>
       <div class="page__links">
