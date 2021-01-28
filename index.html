@@ -1,1 +1,89 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=0.65"><title>Alper KILCI</title><link href=/static/css/app.2236cecdef304fc1c2849a92c7ff1d5b.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.a8bf5e1fc03d84598b52.js></script><script type=text/javascript src=/static/js/vendor.dc06127abe1e6a1ea0e5.js></script><script type=text/javascript src=/static/js/app.23e23366b873a1686317.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./static/css/index.css" />
+
+    <title>Alper Kilci</title>
+  </head>
+
+  <script type="module">
+    import {
+      html,
+      Component,
+      render,
+      useState,
+      useEffect,
+      useRef,
+    } from "https://unpkg.com/htm/preact/standalone.module.js";
+    import DateTimeDisplay from "./static/js/date-time-display.js";
+    import useDebounce from "./static/js/use-debounce.js";
+
+    import Page100 from "./static/js/page-100.js";
+    import Page200 from "./static/js/page-200.js";
+    import Page300 from "./static/js/page-300.js";
+
+    const VALID_PAGES = ["100", "200", "300"];
+    const NAVIGATION_TIMEOUT = 1000;
+
+    const App = () => {
+      const [pageNumber, setPageNumber] = useState("100");
+      const pageNumberRef = useRef(pageNumber);
+      const [currentPage, setCurrentPage] = useState("100");
+
+      const isPageValid = (pn) => !!VALID_PAGES.find((page) => page === pn);
+
+      const debouncedInput = useDebounce(pageNumber, NAVIGATION_TIMEOUT);
+
+      useEffect(() => {
+        if (isPageValid(pageNumber)) {
+          setCurrentPage(pageNumber);
+        } else {
+          setPageNumber("100");
+        }
+      }, [debouncedInput]);
+
+      useEffect(() => {
+        pageNumberRef.current = pageNumber;
+      }, [pageNumber]);
+
+      const handleKeydown = (e) => {
+        if (
+          (e.keyCode >= 48 && e.keyCode <= 57) ||
+          (e.keyCode >= 96 && e.keyCode <= 105)
+        ) {
+          if (pageNumberRef.current.length < 3) {
+            setPageNumber(`${pageNumberRef.current}${e.key}`);
+          } else {
+            setPageNumber(e.key);
+          }
+        }
+      };
+
+      useEffect(() => {
+        document.addEventListener("keydown", handleKeydown);
+
+        return () => {
+          document.removeEventListener("keydown", handleKeydown);
+        };
+      }, []);
+
+      return html`
+        <div class="app">
+          <div class="page-container">
+            <div class="page-header">
+              <span class="page-number">P${pageNumber}</span>
+              <span class="title">TELETEXT</span>
+              <${DateTimeDisplay} />
+            </div>
+            ${currentPage === "100" && html`<${Page100} />`}
+            ${currentPage === "200" && html`<${Page200} />`}
+            ${currentPage === "300" && html`<${Page300} />`}
+          </div>
+          <div class="page__footer">Click or type page number to navigate</div>
+        </div>
+      `;
+    };
+
+    render(html`<${App} page="All" />`, document.body);
+  </script>
+</html>
