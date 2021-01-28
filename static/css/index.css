@@ -1,0 +1,154 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 12px;
+}
+
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+@font-face {
+  font-family: teletekst;
+  src: url("../assets/8-bit_pusab.ttf");
+}
+
+.app {
+  font-family: "Courier New", "Courier", "monospace";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .app {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .app {
+    margin-left: 20%;
+    width: 60%;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .app {
+    margin-left: 20%;
+    width: 60%;
+    font-size: 24px;
+  }
+}
+
+.page-header {
+  display: grid;
+  grid-template-columns: 10% auto 60%;
+}
+
+.page-header .datetime {
+  justify-self: end;
+}
+
+.page-header .date {
+  margin-right: 12px;
+}
+
+.page-container {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-gap: 5px;
+  height: 0;
+  padding-bottom: 75%;
+}
+
+.page {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  grid-gap: 12px;
+}
+
+.banner-text {
+  text-align: center;
+}
+
+.banner-text--top {
+  font-size: 0.6em;
+  margin-bottom: 5px;
+}
+
+.banner-text--bottom {
+  font-size: 1.2em;
+}
+
+.contact-link {
+  display: block;
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.link {
+  cursor: pointer !important;
+}
+
+.page__info {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.image {
+  text-align: right;
+}
+
+.image img {
+  height: 60%;
+  width: 60%;
+}
+
+.page__links {
+  margin: 0 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  align-self: end;
+}
+
+.page__links .link {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20px;
+}
+.page__links .link__number {
+  text-align: right;
+}
+
+.page__banner {
+  background-color: blue;
+  font-family: teletekst;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.page__footer {
+  margin-top: -32px;
+  height: 24px;
+  font-size: 20px;
+  align-self: end;
+  text-align: center;
+  background-color: red;
+}

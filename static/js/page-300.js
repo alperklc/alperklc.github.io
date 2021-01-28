@@ -1,8 +1,8 @@
-<template>
-  <base-page title="TELETEXT" number="300">
-    <div
-      class="page"
-      slot="pageContent">
+import { html } from "https://unpkg.com/htm/preact/standalone.module.js";
+
+const Page300 = () => {
+  return html`
+    <div class="page">
       <div class="page__banner">
         <span class="banner-text banner-text--top">(⌐■_■)</span>
         <span class="banner-text banner-text--bottom">CONTACT</span>
@@ -15,7 +15,7 @@
         </span>
         <span class="contact-link">
           <span>Twitter:</span>
-          <a class="link nostyle" href="https://www.twitter.com/alperql">twitter.com/alperql</a>
+          <a class="link nostyle" href="https://www.twitter.com/alperql">twitter.com/alperql</a >
         </span>
         <span class="contact-link">
           <span>Github:</span>
@@ -30,25 +30,9 @@
           <a class="link nostyle" href="https://www.xing.com/profile/Alper_KILCI">xing.com/profile/Alper_KILCI</a>
         </span>
       </div>
-      <div>
-      </div>
+      <div></div>
     </div>
-  </base-page>
-</template>
-
-<script>
-import BasePage from '../components/BasePage';
-
-export default {
-  components: { BasePage },
+  `;
 };
-</script>
 
-<style>
-.contact-link {
-  display: block;
-  margin: 0 20px;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-}
-</style>
+export default Page300;

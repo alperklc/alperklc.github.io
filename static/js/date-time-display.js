@@ -5,7 +5,7 @@ import {
 } from "https://unpkg.com/htm/preact/standalone.module.js";
 
 const DateTimeDisplay = () => {
-  const [currentTime, setCurrentTime] = useState(0);
+  const [currentTime, setCurrentTime] = useState(new Date());
 
   const updateCurrentTime = () => {
     setCurrentTime(new Date());

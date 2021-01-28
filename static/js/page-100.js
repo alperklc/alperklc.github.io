@@ -1,6 +1,8 @@
-<template>
-  <base-page title="TELETEXT" number="100">
-    <div class="page" slot="pageContent">
+import { html } from "https://unpkg.com/htm/preact/standalone.module.js";
+
+const Page100 = () => {
+  return html`
+    <div class="page">
       <div class="page__banner">
         <span class="banner-text banner-text--top">Personal website of</span>
         <span class="banner-text banner-text--bottom">ALPER KILCI</span>
@@ -22,50 +24,7 @@
         </a>
       </div>
     </div>
-  </base-page>
-</template>
-
-<script>
-import BasePage from '../components/BasePage';
-
-export default {
-  components: { BasePage },
+  `;
 };
-</script>
 
-<style lang="scss">
-.page {
-  &__info {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    align-items: center;
-    margin: 0 20px;
-
-    .image {
-      text-align: right;
-      img {
-        height: 60%;
-        width: 60%;
-      }
-    }
-  }
-
-  &__links {
-    margin: 0 20px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
-    align-self: end;
-
-    .link {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      height: 20px;
-
-      &__number {
-        text-align: right;
-      }
-    }
-  }
-}
-</style>
+export default Page100;
